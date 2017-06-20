@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>W3 CSS Website</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/w3.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<!-- Navigation -->
+		<div class="w3-top">
+			<div class="w3-bar w3-black">
+				<span class="branding w3-bar-item w3-mobile"><a href="#home">W3 CSS</a></span>
+				<!-- Delete this div!!!!!!!!!! -->
+				<!-- <div style="width:50px;" class="w3-bar-item w3-mobile"><img src="images/pigeon_logo.png" alt="pigeon" style="width:100%;"></div> -->
+				<span class="w3-right w3-mobile">
+					<a href="#home" class="w3-bar-item w3-button w3-mobile w3-hover-red">Home</a>
+					<a href="#about" class="w3-bar-item w3-button w3-mobile w3-hover-red">About</a>
+					<a href="#services" class="w3-bar-item w3-button w3-mobile w3-hover-red">Services</a>
+					<a href="#contact" class="w3-bar-item w3-button w3-mobile w3-hover-red">Contact</a>
+				</span>
+			</div>
+		</div>
+
+		<!-- Showcase -->
+		<section id="home" class="showcase">
+			<div class="w3-container w3-center">
+				<h1 class="w3-text-shadow w3-animate-opacity">Best Pork</h1>
+				<hr>
+				<p class="w3-animate-opacity">Bacon ipsum dolor amet kevin short ribs alcatra, tongue andouille capicola fatback picanha salami jowl turducken pancetta pork short loin. Pork doner leberkas, frankfurter pork belly andouille pig tongue shankle capicola bacon jowl biltong.</p>
+				<button onclick="document.getElementById('start-modal').style.display='block'" class="w3-button w3-red w3-large w3-opacity">Start Here</button>
+			</div>
+		</section>
+
+
+		<!-- Section 1 -->
+		<section class="section w3-red w3-hover-opacity">
+			<div class="w3-container w3-center">
+				<i class="fa fa-home"></i>
+				<h2>Welcome To Our Store</h2>
+				<p>Turducken kevin ham hock pork tenderloin sirloin t-bone doner porchetta bresaola. Fatback cow hamburger biltong. Jowl meatloaf jerky pork shank beef prosciutto shankle.</p>
+			</div>
+		</section>
+		<!-- Section 2 -->
+		<section class="section w3-light-gray w3-hover-opacity">
+			<div class="w3-container w3-center">
+				<i class="fa fa-cog"></i>
+				<h2>Let's Begin</h2>
+				<p>Sirloin t-bone prosciutto jerky rump pork loin shankle brisket chicken biltong ham short ribs corned beef sausage. Landjaeger shoulder ball tip porchetta turkey hamburger.</p>
+			</div>
+		</section>
+		<!-- About -->
+		<section id="about" class="section">
+			<div class="w3-container">
+				<div class="w3-row-padding">
+					<div class="w3-col m5">
+						<img src="images/about.jpg">
+					</div>
+					<div class="w3-col m7">
+						<button onclick="accordionFunction('what')" class="w3-block w3-black w3-button w3-left-align kill_hover">What We Do</button>
+						<div id="what" class="w3-container w3-show">
+							<h3>We Make Bacon</h3>
+  							<p>Ball tip pork loin tri-tip meatloaf salami leberkas t-bone, cow short loin biltong swine. Tongue boudin spare ribs andouille t-bone filet mignon. Sausage flank biltong, short loin chuck ham brisket turkey picanha spare ribs pork loin meatball ground round shoulder. Pork chop fatback jowl meatball, shankle boudin turkey pancetta bacon.</p>
+						</div>
+						<button onclick="accordionFunction('who')" class="w3-block w3-black w3-button w3-left-align separator">Who We Are...</button>
+						<div id="who" class="w3-container w3-hide">
+							<h3>We Are Butchers</h3>
+  							<p>Prosciutto pork loin turkey, t-bone sirloin ball tip rump cupim pig short ribs bresaola. Pig flank turducken strip steak. Spare ribs pig doner landjaeger strip steak flank swine. Burgdoggen tri-tip andouille jerky salami picanha brisket doner landjaeger bacon.</p>
+						</div>
+						<button onclick="accordionFunction('where')" class="w3-block w3-black w3-button w3-left-align separator">Where Are We...</button>
+						<div id="where" class="w3-container w3-hide">
+							<h3>We Are Near You</h3>
+  							<p>Flank sausage spare ribs leberkas picanha chicken. Flank ball tip pork belly, pork landjaeger pork chop meatloaf. Meatloaf prosciutto rump hamburger ball tip, pork loin cupim bresaola sausage. Boudin ham chicken short ribs pancetta, capicola kielbasa leberkas pastrami. Strip steak doner flank, brisket venison pancetta frankfurter ribeye short ribs.</p>
+						</div>												
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Services heading -->
+		<section id="services" class="section w3-red">
+			<div class="w3-container w3-center">
+				<h1 class="w3-text-shadow">Pork Services</h1>
+				<p>Pork chop bresaola pancetta shankle, porchetta pork belly ball tip beef ribs. Turkey drumstick sirloin, pork cupim shoulder short ribs jowl boudin pancetta ribeye tri-tip tail ground round. Shoulder ground round fatback filet mignon spare ribs. Andouille pork chop strip steak chicken biltong, spare ribs pig.</p>
+			</div>
+		</section>
+		<!-- Services -->
+		<section class="section w3-light-gray">
+			<div class="w3-container w3-center">
+				<div class="w3-row">
+					<div class="w3-col m3">
+						<i class="fa fa-comment w3-red w3-padding-small w3-round-xlarge"></i>
+						<h3>Salami Marketing</h3>
+						<p>Andouille pork chop strip steak chicken biltong, spare ribs pig.</p>
+					</div>
+					<div class="w3-col m3">
+						<i class="fa fa-search w3-red w3-padding-small w3-round-xlarge"></i>
+						<h3>Sausages Recipes</h3>
+						<p>Andouille pork chop strip steak chicken biltong, spare ribs pig.</p>
+					</div>	
+					<div class="w3-col m3">
+						<i class="fa fa-cubes w3-red w3-padding-small w3-round-xlarge"></i>
+						<h3>Fresh Meat</h3>
+						<p>Andouille pork chop strip steak chicken biltong, spare ribs pig.</p>
+					</div>
+					<div class="w3-col m3">
+						<i class="fa fa-cloud w3-red w3-padding-small w3-round-xlarge"></i>
+						<h3>Buy Meat Online</h3>
+						<p>Andouille pork chop strip steak chicken biltong, spare ribs pig.</p>
+					</div>														
+				</div>												
+			</div>
+		</section>
+		<!-- Contact heading -->
+		<section id="contact" class="section w3-dark-gray w3-red">
+			<div class="w3-container w3-center">
+				<h1 class="w3-text-shadow">Message Us</h1>
+				<p>Pork chop bresaola pancetta shankle, porchetta pork belly ball tip beef ribs. Turkey drumstick sirloin, pork cupim shoulder short ribs jowl boudin pancetta ribeye tri-tip tail ground round. Shoulder ground round fatback filet mignon spare ribs. Andouille pork chop strip steak chicken biltong, spare ribs pig.</p>
+			</div>
+		</section>
+		<!-- Contact -->
+		<section class="section">
+			<div class="w3-container">
+				<div class="w3-card-4">
+					<div class="w3-container w3-red push_edit">
+						<h2>Contact Us</h2>
+					</div>
+					<form class="w3-container w3-padding-large">
+						<label>Name</label>
+						<input class="w3-input" type="text">
+						<label>Email</label>
+						<input class="w3-input" type="text">
+						<label>Message</label>
+						<textarea class="w3-input w3-bprder"></textarea>
+						<button type="submit" class="w3-button w3-red">Send</button>
+						<br>
+						<br>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- Footer -->
+		<footer class="w3-black w3-padding-large w3-center">
+			<p>Web Bacon Store &copy; 2017</p>
+		</footer>
+		<!-- Modal -->
+		<div id="start-modal" class="w3-modal">
+			<div class="w3-modal-content">
+				<header class="w3-container w3-red">
+					<span onclick="document.getElementById('start-modal').style.display='none'" class="w3-button w3-large w3-red w3-display-topright">&times;</span>
+					<h2>Buy Your Meat</h2>
+				</header>
+				<div class="container">
+					<form>
+						<div class="w3-section w3-padding-large">
+							<label>Name</label>
+							<input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Name">
+							<label>Username</label>
+							<input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username">
+							<label>Password</label>
+							<input class="w3-input w3-border w3-margin-bottom" type="password" placeholder="Enter Password">
+							<label>Confirm Password</label>
+							<input class="w3-input w3-border w3-margin-bottom" type="password" placeholder="Repeat Password">
+							<button class="w3-black w3-block w3-section w3-padding">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>
